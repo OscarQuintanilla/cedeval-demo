@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('./fonts/Metropolis.otf');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./fonts/OpenSans.ttf');
+}
+
+* {
+  @apply font-open-sans;
+}
+
+* {
+  @apply font-open-sans;
+}
+
+h1 {
+  @apply text-4xl font-bold font-metropolis;
+}
+
+h2 {
+  @apply text-2xl font-bold font-metropolis;
+}
+
+h3 {
+  @apply text-xl font-bold font-metropolis;
+}
+
+h4 {
+  @apply text-lg font-bold font-metropolis;
+}
+
+h5 {
+  @apply text-base font-bold font-metropolis;
+}
+
+input[type='password']::-ms-reveal,
+input[type='password']::-ms-clear {
+  display: none;
+}
+
+select {
+  @apply appearance-none;
+}
+
+select:required:invalid {
+  @apply text-neutral-600;
+}
+
+option {
+  @apply text-neutral-500;
+}
+
+input::placeholder {
+  @apply text-neutral-600;
+}
